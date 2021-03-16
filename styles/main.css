@@ -1,0 +1,278 @@
+/** Main CSS Styling file */
+/*-- Highlight.JS part. DONT TOUCH THIS */
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #f0f0f0;
+}
+.hljs,
+.hljs-subst {
+    color: #444;
+}
+.hljs-comment {
+    color: #888888;
+}
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta-keyword,
+.hljs-doctag,
+.hljs-name {
+    font-weight: bold;
+}
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+    color: #880000;
+}
+.hljs-title,
+.hljs-section {
+    color: #880000;
+    font-weight: bold;
+}
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #bc6060;
+}
+.hljs-literal {
+    color: #78a960;
+}
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+    color: #397300;
+}
+.hljs-meta {
+    color: #1f7199;
+}
+.hljs-meta-string {
+    color: #4d99bf;
+}
+.hljs-emphasis {
+    font-style: italic;
+}
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #abb2bf;
+    background: #282c34;
+}
+.hljs-comment,
+.hljs-quote {
+    color: #5c6370;
+    font-style: italic;
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+    color: #c678dd;
+}
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+    color: #e06c75;
+}
+.hljs-literal {
+    color: #56b6c2;
+}
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+    color: #98c379;
+}
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #e6c07b;
+}
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+    color: #d19a66;
+}
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+    color: #61aeee;
+}
+.hljs-emphasis {
+    font-style: italic;
+}
+.hljs-strong {
+    font-weight: bold;
+}
+.hljs-link {
+    text-decoration: underline;
+}
+/*-- END OF Highlight.js */
+/*-- Start of individual css part */
+body {
+    position: relative;
+}
+
+.hero-head nav {
+    background: #fff !important;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.hero {
+    background: #f1f1f1;
+    background: #fff;
+}
+
+.section.code {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.section.primary {
+    background: #d81c1c;
+    background: #f1f1f1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+.primarya.section .title,
+.primarya.section .subtitle,
+.section.code .title,
+.section.code .subtitle {
+    color: #fff;
+}
+
+.footer {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+.footer .subtitle {
+    font-size: 1em;
+}
+
+.emoji img {
+    height: 0.8em;
+    margin-left: 3px;
+    margin-top: 0.3em;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+.level-item .title {
+    color: #f1f1f1;
+}
+
+#slider {
+    position: relative;
+    text-align: center;
+}
+
+#slider.has-image code {
+    background-image: url('assets/images/hot_reload.png');
+    background-size: cover;
+    color: transparent;
+}
+
+#slider.has-image code span {
+    opacity: 0;
+}
+
+#slider img,
+#slider pre {
+    text-align: left;
+}
+
+.fa-circle,
+.fa-circle-thin {
+    border-radius: 50%;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: auto;
+}
+
+pre {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+img.screenshot {
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+code.hljs {
+    font-family: Consolas, "Liberation Mono", Menlo, Monaco, Lucida Console,
+        Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+        Courier New, monospace, serif;
+    line-height: 1.3em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+    padding: 0 1em;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.section .button {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hljs-keyword {
+    font-weight: normal;
+}
+
+.column.text {
+    padding-top: 2em;
+}
+
+.column.text .title {
+    padding-bottom: 0.5em;
+}
+
+.readme {
+    background: #f1f1f1;
+    color: #6a6a6a;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.is-angel {
+    border-color: #d81c1c;
+    color: #d81c1c;
+}
+
+.is-gitter {
+    background: #ed1965 !important;
+}
+
+@media(max-width: 768px) {
+    .readme span {
+        display: none;
+    }
+}
