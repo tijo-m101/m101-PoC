@@ -147,6 +147,10 @@ textarea {
     outline: none;
 }
 
+.herotitle {
+    font-family: 'Lobster', cursive;
+}
+
 .hero-head nav {
     background: #fff !important;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
@@ -161,6 +165,11 @@ textarea {
     background: #fff;
 }
 
+.contacthero-body { 
+    background: #f1f1f1;
+    background: #fff;
+}
+
 .hero-body {
     background-image: url('https://wallup.net/wp-content/uploads/2016/01/252608-nature-landscape-mountain-forest-mist-clouds-Alps.jpg');
     background-repeat: no-repeat;
@@ -170,7 +179,13 @@ textarea {
     font-size:0.8em; 
     font-weight: 900; 
     text-transform: uppercase; 
-    color: black;
+    color: 	#A9A9A9;
+}
+
+.dodgerblue {
+    color: dodgerblue;
+    font-family: consolas;
+    font-style: italic;
 }
 
 .section.code {
@@ -224,28 +239,6 @@ textarea {
 
 .level-item .title {
     color: #f1f1f1;
-}
-
-
-
-#slider {
-    position: relative;
-    text-align: center;
-}
-
-#slider.has-image code {
-    background-image: url('assets/images/hot_reload.png');
-    background-size: cover;
-    color: transparent;
-}
-
-#slider.has-image code span {
-    opacity: 0;
-}
-
-#slider img,
-#slider pre {
-    text-align: left;
 }
 
 pre {
@@ -310,6 +303,14 @@ code.hljs {
     padding: 5px;
 }
 
+.comments {
+    height: 350px;
+}
+
+.img {
+    border-radius: 5px;
+}
+
 .linkbutton {
     margin-top: 10px;;
 }
@@ -327,6 +328,13 @@ code.hljs {
     background-color: whitesmoke
 }
 
+/* forms   */
+
+.select {
+    outline: none;
+    border: none;
+}
+
 .formdiv {
     padding: 50px 0;
     width: 80%;
@@ -334,6 +342,10 @@ code.hljs {
     margin: 0 auto;
   }
   
+  .containertext {
+      margin-top: 10px;
+  }
+
   .container * {
     box-sizing: border-box;
   }
@@ -403,10 +415,6 @@ code.hljs {
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 2px;
-  }
-
-  .headerbutton {
-      margin-top: em;
   }
   
   .flex-inner li {
