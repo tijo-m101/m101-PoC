@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="description" />
         <meta name="keywords" content="keywords" />
-        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="https://www.pubnub.com/wp-content/uploads/2015/01/B62xj9FCUAA3YoC.png" type="image/png">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
@@ -22,7 +22,7 @@
                 <p>
                     Atom Editor v.1.39.0 is out now!
                     <span>Brings load-time improvements, Electron upgrades and more.</span>
-                    <a href="" target="_blank">
+                    <a href="https://blog.atom.io/2019/07/23/atom-1-39.html" target="_blank">
                         Read more
                     </a>
                     .
@@ -42,24 +42,21 @@
                     <div id="navbarBasicExample" class="navbar-menu">
                         <aside>
                             <div class="navbar-start">
-                                <a class="navbar-item" href="" target="_blank">
+                                <a class="navbar-item" href="../index.html" target="_blank">
+                                    Home
+                                </a>
+                                <a class="navbar-item" target="_blank" href="version.html">
+                                    Version
+                                </a>
+                                <a class="navbar-item" target="_blank" href="install.html">
                                     Install
-                                </a>
-                                <a class="navbar-item" target="_blank" href="">
-                                    History
-                                </a>
-                                <a class="navbar-item" target="_blank" href="">
-                                    Packages
-                                </a>
-                                <a class="navbar-item" target="_blank" href="">
-                                    Contact
                                 </a>
                             </div>
                         </aside>
                         <div class="navbar-end">
                             <div class="navbar-item">
                                 <div class="buttons">
-                                    <a class="button is-black" href="https://github.com" target="_blank">
+                                    <a class="button is-black" href="https://github.com/tijo-m101/m101-PoC" target="_blank">
                                         <span class="icon is-small">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -74,6 +71,7 @@
             <div class="contacthero-body has-text-centered bodycontact">
                 <div class="container">
                     <div class="title" style="margin-bottom: 0;">
+                        <br>
                         <h1>Contact Form</h1>
                     </div>
                     <br />
@@ -95,7 +93,7 @@
                                 </li>
                                 <li>
                                     <label for="email" class="formtitle">Email</label>
-                                    <input type="email" id="email" placeholder="Enter your email here" name="email" />
+                                    <input type="email" id="email" placeholder="Enter your email here" name="email" readonly/>
                                 </li>
                                 <li>
                                     <label for="phone" class="formtitle">Phone</label>
@@ -103,36 +101,33 @@
                                 </li>
                                 <li>
                                     <label for="message" class="formtitle">Message</label>
-                                    <textarea rows="6" id="message" placeholder="Enter your message here" name="message"></textarea>
+                                    <textarea rows="6" id="message" placeholder="Enter your message here" name="message" readonly></textarea>
                                 </li>
                                 <li>
-                                    <p class="formtitle">Age</p>
+                                    <p class="formtitle">Gender</p>
                                     <ul class="flex-inner">
                                         <li>
-                                            <input type="checkbox" id="twenty-to-twentynine" name="age" />
-                                            <label for="twenty-to-twentynine">1</label>
+                                            <input type="checkbox" id="twenty-to-twentynine" name="masculin" />
+                                            <label for="twenty-to-twentynine">Man</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="thirty-to-thirtynine" name="age" />
-                                            <label for="thirty-to-thirtynine">2</label>
+                                            <input type="checkbox" id="thirty-to-thirtynine" name="feminin" />
+                                            <label for="thirty-to-thirtynine">Women</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="fourty-to-fourtynine" name="age" />
-                                            <label for="fourty-to-fourtynine">3</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="fifty-to-fiftynine" name="age" />
-                                            <label for="fifty-to-fiftynine">4</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="sixty-to-sixtynine" name="age" />
-                                            <label for="sixty-to-sixtynine">5</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="other" name="age" />
-                                            <label for="other">Other</label>
+                                            <input type="checkbox" id="fourty-to-fourtynine" name="neutral" />
+                                            <label for="fourty-to-fourtynine">Other</label>
                                         </li>
                                     </ul>
+                                </li>
+                                <li>
+                                    <label for="age" class="formtitle">Age</label>
+                                    <select class="select" name="carlist" form="carform">
+                                        <option value="15">15</option>
+                                        <option value="25">25</option>
+                                        <option value="35">35</option>
+                                        <option value="45">45</option>
+                                    </select>
                                 </li>
                                 <li>
                                     <button type="submit">Submit</button>
@@ -172,7 +167,11 @@
             </nav>
             <br />
             <div class="container">
-                <div class="subtitle">&copy; <span class="year">2021</span> Build with love by Joshua Sanchez and <a href="https://timo-cmd.github.io" target="_blank"> Timo Sarkar</a>.</div>
+                <div class="subtitle">
+                    &copy; <span class="year">2021</span> Build with love by Joshua Sanchez and <a href="https://timo-cmd.github.io" target="_blank"> Timo Sarkar</a>.
+                    <br>
+                    <a href="https://github.com/tijo-m101/m101-SRC/tree/main">External sources</a>
+                </div>
             </div>
         </footer>
         <script>
