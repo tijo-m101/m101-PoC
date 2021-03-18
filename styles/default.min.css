@@ -1,139 +1,11 @@
-/** Main CSS Styling file */
-/*-- Highlight.JS part. DONT TOUCH THIS */
-.hljs {
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    background: #f0f0f0;
+:root {
+    --lobster: 'Lobster', cursive !important;
+    --headbg:#fff !important;
+    --bgfff:#fff; 
+    --bgf1f1f1: #f1f1f1;
+    --hljs: Consolas, "Liberation Mono", Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --bgimg: url('https://github.com/tijo-m101/m101-SRC/blob/main/assets/mount.jpg?raw=true');
 }
-.hljs,
-.hljs-subst {
-    color: #444;
-}
-.hljs-comment {
-    color: #888888;
-}
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name {
-    font-weight: bold;
-}
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion {
-    color: #880000;
-}
-.hljs-title,
-.hljs-section {
-    color: #880000;
-    font-weight: bold;
-}
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-    color: #bc6060;
-}
-.hljs-literal {
-    color: #78a960;
-}
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-    color: #397300;
-}
-.hljs-meta {
-    color: #1f7199;
-}
-.hljs-meta-string {
-    color: #4d99bf;
-}
-.hljs-emphasis {
-    font-style: italic;
-}
-.hljs-strong {
-    font-weight: bold;
-}
-
-.hljs {
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    color: #abb2bf;
-    background: #282c34;
-}
-.hljs-comment,
-.hljs-quote {
-    color: #5c6370;
-    font-style: italic;
-}
-.hljs-doctag,
-.hljs-keyword,
-.hljs-formula {
-    color: #c678dd;
-}
-.hljs-section,
-.hljs-name,
-.hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-    color: #e06c75;
-}
-.hljs-literal {
-    color: #56b6c2;
-}
-.hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-    color: #98c379;
-}
-.hljs-built_in,
-.hljs-class .hljs-title {
-    color: #e6c07b;
-}
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-    color: #d19a66;
-}
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-    color: #61aeee;
-}
-.hljs-emphasis {
-    font-style: italic;
-}
-.hljs-strong {
-    font-weight: bold;
-}
-.hljs-link {
-    text-decoration: underline;
-}
-/*-- END OF Highlight.js */
-/*-- Start of individual css part */
 
 body {
     position: relative;
@@ -148,30 +20,30 @@ textarea {
 }
 
 .herotitle {
-    font-family: 'Lobster', cursive;
+    font-family: var(--lobster);
 }
 
 .hero-head nav {
-    background: #fff !important;
+    background: var(--headbg);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .contacthead {
-    background: #fff !important;
+    background: var(--headbg);
 }
 
 .hero {
-    background: #f1f1f1;
-    background: #fff;
+    background: var(--bgf1f1f1);
+    background: var(--fff);
 }
 
 .contacthero-body { 
-    background: #f1f1f1;
-    background: #fff;
+    background: var(--bgf1f1f1);
+    background: var(--fff);
 }
 
 .hero-body {
-    background-image: url('https://wallup.net/wp-content/uploads/2016/01/252608-nature-landscape-mountain-forest-mist-clouds-Alps.jpg');
+    background-image: var(--bgimg);
     background-repeat: no-repeat;
 }
 
@@ -199,6 +71,7 @@ textarea {
 
 .title {
     margin-bottom: 0 !important;
+    font-family: var(--lobster);
 }
 
 .subtitle {
@@ -264,9 +137,7 @@ img.screenshot {
 }
 
 code.hljs {
-    font-family: Consolas, "Liberation Mono", Menlo, Monaco, Lucida Console,
-        Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-        Courier New, monospace, serif;
+    font-family: var(--hljs);
     line-height: 1.3em;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -277,7 +148,10 @@ code.hljs {
 }
 
 .bash {
-    text-align: left; width: fit-content; margin: auto;
+    text-align: 
+    left; width: 
+    fit-content; 
+    margin: auto;
 }
 
 .section .button {
@@ -340,73 +214,73 @@ code.hljs {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
   
-  .containertext {
-      margin-top: 10px;
-  }
+.containertext {
+    margin-top: 10px;
+}
 
-  .container * {
+.container * {
     box-sizing: border-box;
-  }
+}
   
-  .flex-outer,
-  .flex-inner {
+.flex-outer,
+.flex-inner {
     list-style-type: none;
     padding: 0;
-  }
+}
   
-  .flex-outer {
+.flex-outer {
     max-width: 800px;
     margin: 0 auto;
-  }
+}
   
-  .flex-outer li,
-  .flex-inner {
+.flex-outer li,
+.flex-inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  }
+}
   
-  .flex-inner {
+.flex-inner {
     padding: 0 8px;
     justify-content: space-between;  
-  }
+}
   
-  .flex-outer > li:not(:last-child) {
+.flex-outer > li:not(:last-child) {
     margin-bottom: 20px;
-  }
+}
   
-  .flex-outer li label,
-  .flex-outer li p {
+.flex-outer li label,
+.flex-outer li p {
     padding: 8px;
     font-weight: 300;
     letter-spacing: .09em;
     text-transform: uppercase;
-  }
+}
   
-  .flex-outer > li > label,
-  .flex-outer li p {
+.flex-outer > li > label,
+.flex-outer li p {
     flex: 1 0 120px;
     max-width: 220px;
-  }
+}
   
-  .flex-outer > li > label + *,
-  .flex-inner {
+.flex-outer > li > label + *,
+.flex-inner {
     flex: 1 0 220px;
-  }
+}
   
-  .flex-outer li p {
+.flex-outer li p {
     margin: 0;
-  }
+}
   
-  .flex-outer li input:not([type='checkbox']),
-  .flex-outer li textarea {
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
     padding: 15px;
     border: none;
-  }
+}
   
-  .flex-outer li button {
+.flex-outer li button {
     margin-left: auto;
     padding: 8px 16px;
     border: none;
@@ -415,11 +289,11 @@ code.hljs {
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 2px;
-  }
+}
   
-  .flex-inner li {
+.flex-inner li {
     width: 100px;
-  }
+}
 
 @media(max-width: 768px) {
     .readme span {
