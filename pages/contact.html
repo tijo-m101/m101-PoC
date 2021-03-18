@@ -8,9 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="description" />
         <meta name="keywords" content="keywords" />
-        <link rel="shortcut icon" href="https://www.pubnub.com/wp-content/uploads/2015/01/B62xj9FCUAA3YoC.png" type="image/png">
+        <link rel="shortcut icon" href="https://github.com/tijo-m101/m101-SRC/blob/main/assets/favicon.png?raw=true" type="image/png">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark.min.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
@@ -25,7 +26,6 @@
                     <a href="https://blog.atom.io/2019/07/23/atom-1-39.html" target="_blank">
                         Read more
                     </a>
-                    .
                 </p>
             </div>
         </section>
@@ -42,14 +42,14 @@
                     <div id="navbarBasicExample" class="navbar-menu">
                         <aside>
                             <div class="navbar-start">
-                                <a class="navbar-item" href="../index.html" target="_blank">
+                                <a class="navbar-item" href="../index.html" target="_self">
                                     Home
                                 </a>
-                                <a class="navbar-item" target="_blank" href="version.html">
+                                <a class="navbar-item" target="_self" href="version.html">
                                     Version
                                 </a>
-                                <a class="navbar-item" target="_blank" href="install.html">
-                                    Install
+                                <a class="navbar-item" target="_self" href="install.html">
+                                    Installation
                                 </a>
                             </div>
                         </aside>
@@ -68,32 +68,36 @@
                     </div>
                 </nav>
             </div>
-            <div class="contacthero-body has-text-centered bodycontact">
-                <div class="container">
-                    <div class="title" style="margin-bottom: 0;">
-                        <br>
-                        <h1>Contact Form</h1>
+            <div class="hero-body has-text-centered">
+                <div class="containertext contacttitle">
+                    <div class="title">
+                        <h1 class="herotitle">Contact form</h1>
                     </div>
-                    <br />
-                    <div class="subtitle" style="margin: auto; max-width: 30em;">
+                    <br>
+                    <div class="subtitle">
                         For any questions or considerations, please do not hesitate to contact us.
                     </div>
+                    <br>
+                    <br><br>
+                </div>
+            </div>
+            <div class="contacthero-body has-text-centered bodycontact">
+                <div class="container">
                     <br />
-
                     <div class="formdiv">
                         <form action="https://formspree.io/f/xknpdedy" method="post">
                             <ul class="flex-outer">
                                 <li>
                                     <label for="first-name" class="formtitle">First Name</label>
-                                    <input type="text" id="first-name" placeholder="Enter your first name here" name="fname" />
+                                    <input type="text" id="first-name" placeholder="Enter your first name here" name="fname" required/>
                                 </li>
                                 <li>
                                     <label for="last-name" class="formtitle">Last Name</label>
-                                    <input type="text" id="last-name" placeholder="Enter your last name here" name="lname" />
+                                    <input type="text" id="last-name" placeholder="Enter your last name here" name="lname" required/>
                                 </li>
                                 <li>
                                     <label for="email" class="formtitle">Email</label>
-                                    <input type="email" id="email" placeholder="Enter your email here" name="email" readonly/>
+                                    <input type="email" id="email" placeholder="Enter your email here" name="email" required/>
                                 </li>
                                 <li>
                                     <label for="phone" class="formtitle">Phone</label>
@@ -101,7 +105,7 @@
                                 </li>
                                 <li>
                                     <label for="message" class="formtitle">Message</label>
-                                    <textarea rows="6" id="message" placeholder="Enter your message here" name="message" readonly></textarea>
+                                    <textarea rows="6" id="message" placeholder="Enter your message here" name="message" required></textarea>
                                 </li>
                                 <li>
                                     <p class="formtitle">Gender</p>
